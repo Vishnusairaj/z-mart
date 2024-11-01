@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: aliceblue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navsection{
+    border:1px solid black;
+    display:flex;
+    background-color:black;
+    color: white;
+    height: 80px;
+   justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.user{
+    justify-content: space-around;
 }
+.proSection{
+    display: flex;
+    background-color: aliceblue;
+}
+.imgBox{
+    width:80%;
+    padding-left: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.proImage{
+    width:80%;
+}
+.proTitle h2{
+    margin: 10px ;
+}
+.submenu ul li{
+    list-style: none;
+    margin: 26px;
+    margin-top: 10px;
+}
+.submenu ul{
+    display: inline-flex;
+    
+}
+.submenu {
+    background-color: grey;
+    color: whitesmoke;
+    height: 50px;
+
+}
+.pageSection{
+    display:grid;
+    grid-template-columns: repeat(5,300px);
+    grid:10px;
+}
+.pageImg{
+    width:250px;
+    height: 270px;
+}
+.pageImg Img{
+    width: 100%;
+}
+.ind-image{
+    width: 500px;
+    height:500px;
+}
+.ind-image img{
+    width: 100%;
+}
+.ind-section{
+    display: flex;
+}
+.ind-details{
+    padding: 20px;
+}
+.space{
+    margin:10px;
+    
+}
+.ind-details button{
+    background-color: red;
+    
+    padding: 10px;
+    width:10rem;
+    border-radius: 5px;
+    color: white;
+}
+.fullpage{
+    display: flex;
+}
+.pro-selected{
+    width:30%;
+    border: 1px solid black;
+}
+.pro-input input{
+    margin:5px;
+}
+.cart{
+    color:white;
+}
+ul li{
+    color: aliceblue;
+}
+.cart span{
+    color:orange;
 }
